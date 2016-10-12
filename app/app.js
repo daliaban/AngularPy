@@ -6,12 +6,8 @@
 
 angular.module(
     'AngularPy',
-    ['ui.router',
+    [   'ui.router',
         'ui.bootstrap',
-        'ngTable',
-        'base64',
-        'chart.js',
-        'daterangepicker',
         'restangular',
         'restful'
     ])
