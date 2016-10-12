@@ -1,0 +1,66 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <title>AngularJS with restful Python backend</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(app/..) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/ng-table/dist/ng-table.min.css" />
+    <link rel="stylesheet" href="bower_components/angular-chart.js/dist/angular-chart.css" />
+    <link rel="stylesheet" href="bower_components/bootstrap-daterangepicker/daterangepicker.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css({.tmp,app/..}) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+</head>
+<body ng-app="AngularPy">
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Add your site or application content here -->
+<div ui-view></div>
+<div footer></div>
+
+<!-- build:js(.) vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/ng-table/dist/ng-table.min.js"></script>
+<script src="bower_components/underscore.string/dist/underscore.string.js"></script>
+<script src="bower_components/ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="bower_components/lodash/lodash.js"></script>
+<script src="bower_components/ngstorage/ngStorage.js"></script>
+<script src="bower_components/angular-base64/angular-base64.js"></script>
+<script src="bower_components/Chart.js/Chart.js"></script>
+<script src="bower_components/angular-chart.js/dist/angular-chart.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/moment/moment.js"></script>
+<script src="bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+<script src="bower_components/angular-daterangepicker/js/angular-daterangepicker.js"></script>
+<script src="bower_components/restangular/dist/restangular.js"></script>
+<!-- endbower -->
+<script src="../bower_components/underscore.string/dist/underscore.string.min.js"></script>
+<!-- endbuild -->
+
+<!-- build:js({.tmp,app,app/..}) scripts.js -->
+<script src="app.js"></script>
+<script src="configuration.js"></script>
+<script src="scripts/restful.module.js"></script>
+<script src="scripts/restful.js"></script>
+<script src="scripts/restful.factory.js"></script>
+<script src="scripts/worker.js"></script>
+<!--End of custom apps -->
+
+<!-- endbuild -->
+
+</body>
+</html>

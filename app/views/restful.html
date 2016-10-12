@@ -1,0 +1,20 @@
+<div ng-include="'top-header.html'"></div>
+<div class="menu-content-container">
+    <div class="container container-board">
+        <div class="filter-panel">
+            <div class="row">
+                <div class="col-sm-8 col-xs-12">
+                    <!-- Page title -->
+                    <h1 class="page-title">Restful</h1>
+                </div>
+            </div>
+            <div class="row page-content">
+                <!-- Page content -->
+                <h2>Description</h2>
+                This is a restful ceres module. It interfaces with Flask backend to create restful interfaces<br/><br/>
+                <div my-table columns="tableOptions.columnDefs" data="data.paged" paging-options="pagingOptions" sort-options="sortOptions" on-sort-click="onSortClick"></div>
+                <button class="btn btn-primary" ng-click="addWorker()">Add Worker</button>
+            </div>
+        </div>
+    </div>
+</div>

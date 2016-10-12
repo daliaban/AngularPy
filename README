@@ -1,0 +1,40 @@
+README
+
+AngularRestPy: a boiler plate for Flask backend and Angular front end based apps, restful APIs
+
+Build Backend:
+
+In the Backend folder, create a virtual environment:
+
+virtualenv --no-site-packages venv
+
+activate it:
+
+. venv/bin/activate
+
+Install the backend:
+
+python setup.py install
+
+Create the database:
+
+paster --plugin=server create_db config.ini createall
+
+Run backend server:
+
+paster serve config.ini
+
+Access the Backend APIs at:
+
+http://127.0.0.1:5000/server/api/worker
+
+
+Build Frontend
+
+Install node packages:
+
+npm install
+
+Initiate Karma for unit testing:
+
+node_modules/karma/bin/karma init
